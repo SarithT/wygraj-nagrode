@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load bootstrap3 %}
+{% block title %}Login{% endblock %}
+
+{% block content %}
+    <body class="container">
+    <div class="container-fluid">
+        <div class="col-md-8 col-md-offset-2">
+            {% if user.is_authenticated %}
+                <h2 style="text-align: center">Jesteś już zalogowany</h2>
+            {% else %}
+
+                <h2 style="text-align: center">Zaloguj się</h2>
+                <br>
+                <form method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    {% bootstrap_form form %}
+                    <p> Nie masz konta? <a href="/signup">Zarejestruj się</a></p>
+                    <button class="btn btn-default btn-primary" type="submit">Zaloguj</button>
+                    <p style="padding-top: 0.5em"> <a href="/password_reset">Nie pamiętam hasła</a></p>
+                </form>
+                <br>
+            {% endif %}
+
+        </div>
+    </div>
+    </body>
+{% endblock %}

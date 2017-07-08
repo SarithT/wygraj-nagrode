@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TMS</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" media="screen">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+<div class="navbar navbar-inverse navbar-default navbar-fixed-top">
+    <div class="container">
+        <!--HAMBURGER MENU-->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand model_title" href="#"></a>
+        </div>
+        <!--/HAMBURGER MENU-->
+
+        <div id="nav_toplevel" class="collapse navbar-collapse">
+            <ul id="nav_main" class="nav navbar-nav">
+                <li style="font-size: large"><a href="/nagrody">O konkursie</a></li>
+                <li><a href="/nagrody/charge-points">Doładuj punkty</a></li>
+                <li><a href="/nagrody/prizes">Katalog nagród</a></li>
+                <li><a href="/nagrody/ranking">Ranking punktów</a> </li>
+                <li><a href="/nagrody/get-code">Zdobądź kod na punkty</a> </li>
+                <li><a href="/nagrody/vouchers">Vouchery</a> </li>
+{#                <li><a href="/nagrody/exchange-points">Zamień punkty na voucher</a> </li>#}
+{#                <li><a href="/nagrody/answer">Wykorzystaj voucher</a> </li>#}
+                <li><a target="_blank" href="{% static 'img/regulamin.pdf' %}">Regulamin</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right" style="cursor: pointer">
+                    <li><a href="premium/user-account">Witaj {{ user.username }}</a> </li>
+                    <li><a href="/logout">Wyloguj się</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Page Content -->
+{% block content %}
+{% endblock %}
+<!-- /.container -->
+
+
+<footer class="footer">
+    <p class="text-center text-muted">© Copyright 2017 Wygraj-Nagrode.pl</p>
+</footer>
+
+<script type="text/javascript" src="{% static 'js/jquery.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+
+</body>
+</html>

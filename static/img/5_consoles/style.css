@@ -1,0 +1,179 @@
+@font-face {
+    font-family: 'zamien'; /*a name to be used later*/
+    src: url('fonts/zamien.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: '3kroki'; /*a name to be used later*/
+    src: url('fonts/3kroki.otf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'question'; /*a name to be used later*/
+    src: url('fonts/question.otf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'wpk'; /*a name to be used later*/
+    src: url('fonts/wpk.otf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'choice'; /*a name to be used later*/
+    src: url('fonts/choice.ttf'); /*URL to font*/
+}
+.wybor{
+    font-family:'choice';
+}
+.font0{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+.wpk{
+    font-family:'wpk';
+}
+.fontquest{
+    font-family: 'question';
+}
+.zamien{ font-family: 'zamien';}
+.custom3 {
+    font-family: '3kroki';
+    font-size: 1.5rem !important;
+}
+.btn-circle {
+    border-top-left-radius: 1em !important;
+    border-top-right-radius: 1em !important;
+    border-bottom-left-radius: 1em !important;
+    border-bottom-right-radius: 1em !important;
+}
+
+.display-5 {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+@include media-breakpoint-up(sm) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    html {
+        font-size: 20px;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    html {
+        font-size: 28px;
+    }
+}
+.btn-mine{
+    border: 0;
+    display: block;
+}
+.display-6{
+    font-size:1.5rem;
+}
+#MO, #MT{display:none;}
+#section1 {
+    background-image: url("img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.verticaler {
+    display: flex;
+    align-items: center;
+}
+#console1{
+    background-image: url("img/bg1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+#console2 {
+    background-image: url("img/bg2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+.display-3, .h1, .h2, .display-5 {
+    color: black;
+}
+.display-7{
+    font-size:1rem;
+}
+#choice {
+    min-height: 800px;
+}
+#choice .display-3 {
+    color: black;
+}
+
+.bor-right {
+    border-right: thin dashed #828282
+}
+
+#choice li:before {
+    content: '\f111';
+    font-family: fontawesome;
+    font-size: 10px;
+    position: relative;
+    left: 0;
+    top: -0.4em;
+    margin-right: 1em;
+}
+
+.divider {
+    height: 1px;
+    width: 100%;
+    display: block;
+    /* for use on default inline elements like span */
+    margin: 9px 0;
+    overflow: hidden;
+    background-color: #e5e5e5;
+}
+
+#answer {
+    background-color: RGB(235, 235, 235);
+}
+
+#answer p {
+    color: black;
+}
+
+#answer span {
+    color: black;
+}
+
+header * {
+    color: #fff;
+}
+.m-b-5{ margin-bottom:5rem;}
+#confirm p {
+    color: black;
+}
+
+.whited {
+    color: white !important;
+}
+
+#form2 a {
+    color: #5bc0de;
+}
+
+#form2 a:hover {
+    color: white;
+}
+
+.modal-dialog {
+    border: 1px solid;
+}
+#choice .display-5{
+    color:black;
+}
+
+@media (min-width: 544px) {}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {
+}
+
+@media (min-width: 1200px) {}

@@ -1,0 +1,29 @@
+{% extends 'basePremium.html' %}
+
+{% block content %}
+
+    <body class="container">
+    <div class="container-fluid">
+        <h2 class="text-center">Top 5 uczestników</h2>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Lp.</th>
+                <th>Użytkownik</th>
+                <th>Punkty</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for place in last_ten %}
+                <tr>
+                    <td>{{ forloop.counter }}</td>
+                    <td>{{ place.username }}</td>
+                    <td>{{ place.profile.points }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    </body>
+
+{% endblock %}

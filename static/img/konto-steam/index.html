@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="font/stylesheet.css" rel="stylesheet">
+</head>
+<body>
+<section id="top">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="logo"><img src="img/logo.png" alt=""></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="slide">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="slide">
+                    <h4>Uwaga <font style="color:#00a8ff;">Konkurs!</font></h4>
+                    <h6>Zapisz się i wygraj</h6>
+                    <h2>konto <b>STEAM</b> z portfelem <font style="color:#00a8ff;"><b>100€</b></font></h2>
+                    <p>które możesz wydać na zakup dowolnych gier</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="content">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Platforma STEAM to:</h1>
+                <hr>
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <div class="box">
+                            <img src="img/box1.jpg" alt="" class="img-responsive">
+                            <h4>Tysiące gier do wyboru</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="box">
+                            <img src="img/box2.jpg" alt="" class="img-responsive">
+                            <h4>setki godzin niezapomnianej rozrywki</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="box">
+                            <img src="img/box3.jpg" alt="" class="img-responsive">
+                            <h4>możliwość gry na dowolnym komputerze</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <div class="box">
+                            <img src="img/box4.jpg" alt="" class="img-responsive">
+                            <h4>zdobywanie indywidualnych odznaczeń i osiągnięć</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <form id="MO" name="myFormMO" onsubmit="return validateForm('checkboxMO')">
+                <div class="col-md-6">
+                    <div class="warning">
+                        <img src="img/warning.png" alt="">
+                        <h2>Nie zastanawiaj się!</h2>
+                        <span>wypełnij i weź udział w konkursie</span>
+
+
+                        <p>Wyślij <b>SMS z numeru kontaktowego</b><br>
+                            o treści <font style="font-weight:bold;color:#f5cb39;">xxx</font> na numer <font
+                                    style="font-weight:bold;color:#f5cb39;">xxxx</font> <br>
+                            W odpowiedzi otrzymasz KOD, który należy wpisać poniżej:</p>
+                        <input type="text" placeholder="Wpisz otrzymany PIN..." style="color: black">
+                        <br>
+                        <input type="checkbox" name="checkboxMO"> akceptuję <a target="_blank"
+                                                                               href="http://wygraj-nagrode.pl/regulamin.pdf"
+                                                                               style="color: white; text-decoration: none;">
+                        regulamin</a><br>
+                        <a href="#">
+                            <div>
+                                <button type="submit" class="button">Biorę udział</button>
+                            </div>
+                        </a><br>
+                        <div class="alert alert-danger" id="checkbox_alert" style="display: none">
+                            Zaakceptuj regulamin
+                        </div>
+                        <p style="font-size: 11px; color: white; margin-top: 0.5em; line-height: 1.2em">
+                            Wysyłając sms bierzesz udział w konkursie i możesz wygrać konto steam. <br>
+                            Koszt smsa wynosi <span style="color:#f5cb39; font-style: inherit; font-size: 11px;"> xx zł</span>. <br>
+                            Każdy kto wyśle sms ma szansę na wygraną! Życzymy powodzenia. </p>
+                        <p style="font-size: 1.5rem; color: white; font-weight: bold; margin-top: 0.5em">Wartość nagrody: <span style="color: #ff0000; font-style: normal; ">400 zł </span></p>
+                    </div>
+                </div>
+            </form>
+
+            <!--
+                        <form id="MT" name="myFormMT" onsubmit="return validateForm('checkboxMT')">
+                        <div class="col-md-6">
+                            <div class="warning">
+                                <img src="img/warning.png" alt="">
+                                <h2>Nie zastanawiaj się!</h2>
+                                <span>wypełnij i weź udział w konkursie</span>
+
+                                <p>Wpisz kontaktowy numer telefonu<br> i wprowadź otrzymany kod</p>
+                                <p style="padding-top: 0.1em;">Wpisz <strong>numer kontaktowy</strong></p>
+                                <input type="text" placeholder="Numer telefonu" style="color: black; margin-top: 0.1em;">
+                                <p style="margin-top: 0em;">Wprowadź otrzymany <strong>kod</strong></p>
+                                <input type="text" placeholder="Kod" style="color: black; margin-top: 0.1em;">
+                                <br>
+                                <input type="checkbox" name="checkboxMT"> akceptuję <a target="_blank" href="http://wygraj-nagrode.pl/regulamin.pdf" style="color: white; text-decoration: none;"> regulamin</a><br>
+                                <a href="#"><div><button type="submit" class="button">Zapisz mnie</div></a><br>
+                                 <div class="alert alert-danger" id="checkbox_alert2" style="display: none">
+                                                    Zaakceptuj regulamin
+                                                </div>
+                                <p style="font-size: 11px; color: white; margin-top: 0.5em; line-height: 1.2em">
+                                                    Zapisując się do subskrypcji bierzesz udział w konkursie i możesz wygrać konto steam. <br>
+                                                    Koszt odebranego smsa wynosi sześć złotych piętnaście groszy. <br>
+                                                    Każdy uczestnik konkursu ma szansę na wygraną! Życzymy powodzenia. </p>
+                                                    <p style="font-size: 1.5rem; color: white; font-weight: bold; margin-top: 0.5em">Maksymalna wartość nagrody: <span style="color: #ff0000; font-style: normal; ">400 zł </span></p>
+                            </div>
+                        </div>
+                        </form>
+            -->
+
+        </div>
+    </div>
+</section>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel-group">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                        <p style="text-align: left; padding-bottom: 1em;"> © Copyright by Wygraj-Nagrode.pl&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Super nagrody&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jasne zasady&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<span style="text-align: right; margin-left: 400px; "> Reklamacje </span> </p>
+
+                            <h4 class="panel-title">
+                                <p>Regulamin</p>
+                            </h4>
+                        </div>
+                        <div id="collapse1">
+                            <p style="text-align: justify;">Jest to strona typu landing page należąca do serwisu www.wygraj-nagrode.pl. Treści przedstawione na stronie
+
+mają charakter informacyjny i promocyjny, zachęcający do wzięcia udziału w konkursie, w którym jedną z nagród jest konto na
+
+                                platformie Steam z portfelem 100€. Niniejszy landing page jest usługą SMS PREMIUM
+                                dostępną w sieciach
+
+                                Play, Plus, Orange oraz T-Mobile. Koszty wysłania sms wynosi xx,xx zł (xx, xx zł z VAT).
+                                Wysyłając sms na
+
+                                wskazany na niniejszej stronie numer, użytkownik oświadcza, iż zapoznał się i akceptuję
+                                regulamin konkursu.
+
+                                Organizator konkursu, warunki uczestnictwa w konkursie oraz procedura reklamacyjna,
+                                zostały określone w
+
+                                regulaminie. Regulamin znajduję się <a target="_blank"
+                                                                       href="http://wygraj-nagrode.pl/regulamin.pdf"
+                                                                       style="text-decoration:underline;">pod tym
+                                    adresem</a>. Wszelkie nazwy i znaki towarowe użyte na niniejszej
+
+                                stronie mają charakter wyłącznie informacyjny i zostały użyte w celu przedstawienia,
+                                możliwej do zdobycia,
+
+                                nagrody.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Modal -->
+<div class="modal fade bd-example-modal-sm p-a-3" tabindex="-1" role="dialog" id="myModal"
+     aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body text-xs-center">
+                <button type="button" class="btn-lg close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+
+                <div class="alert alert-success">
+                    <p style="margin-bottom: 0px; font-size: 30px"><strong>Dziękujemy za udział w konkursie!</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- javascript -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script>
+    function reveal(how) {
+        step = '#MO';
+        if (how === 'slide') $(step).slideDown("slow");
+    }
+
+</script>
+
+<script type="text/javascript">
+    function validateForm(checkbox_name) {
+        $('#myModal').modal({show: false})
+        var alert_id;
+        var form_name;
+        if (checkbox_name === 'checkboxMO') {
+            alert_id = 'checkbox_alert';
+            form_name = 'myFormMO';
+        }
+        if (checkbox_name === 'checkboxMT') {
+            alert_id = 'checkbox_alert2';
+            form_name = 'myFormMT';
+        }
+        console.log(alert_id)
+        console.log(checkbox_name)
+        console.log(form_name)
+
+        var y = document.forms[form_name][checkbox_name].checked;
+        console.log(y);
+        if (!y) {
+            show_alert(alert_id);
+            return false;
+        } else {
+            hide_alert(alert_id);
+            $('#myModal').modal('show');
+            return false;
+        }
+    }
+
+    function show_alert(checkbox_alert_id) {
+        var x = document.getElementById(checkbox_alert_id);
+        console.log(x);
+        if (x.style.display === 'none')
+            x.style.display = 'block';
+    }
+    function hide_alert(checkbox_alert_id) {
+        var x = document.getElementById(checkbox_alert_id);
+        if (x.style.display === 'block')
+            x.style.display = 'none';
+    }
+</script>
+
+</body>
+</html>

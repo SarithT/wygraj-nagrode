@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wygraj Galaxy S8 | S8+</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="font/stylesheet.css" rel="stylesheet">
+<script src="js/script.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $(".btn").click(function(){
+        $(".krok1").hide(1000);
+        $(".krok2").show(1000);
+    });
+});
+</script>
+</head>
+<body>
+<section id="top" class="height-full">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="topText">
+				    <span>Wygraj</span>
+                    <h2>Galaxy S8 | Galaxy S8+</h2>
+                    <hr>
+                    <span>i wkrocz</span>
+                    <h4>w nowe oblicze</h4>
+                    <h1>smartfonów</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="compare">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h4>Porównanie modeli</h4>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-7">
+                        <h2>Galaxy S8</h2>
+                        <ul>
+                            <li class="icon1">5,8” Super AMOLED</li>
+                            <li class="icon2">3000 mAh</li>
+                            <li class="icon3">64 GB</li>
+                            <li class="icon4">155 g</li>
+                            <li class="icon5">Wodoodporność</li>
+                            <li class="icon6">Szybkie bezprzewodowe ładowanie</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="img/s8.png" alt="" class="img-responsive">
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-5">
+                        <img src="img/s8plus.png" alt="" class="img-responsive">
+                    </div>
+                    <div class="col-md-7">
+                        <h2>Galaxy S8+</h2>
+                        <ul>
+                            <li class="icon1">6,2” Super AMOLED</li>
+                            <li class="icon2">3500 mAh</li>
+                            <li class="icon3">64 GB</li>
+                            <li class="icon4">173 g</li>
+                            <li class="icon5">Wodoodporność</li>
+                            <li class="icon6">Szybkie bezprzewodowe ładowanie</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="clr"></div>
+<section id="choose">
+    <div class="container">
+        <div class="row">
+            <div class="krok1">
+                <div class="col-md-3 col-md-offset-3">
+                    <div class="chooseImg">
+                        <img src="img/s8-choose.png" alt="" class="img-responsive">
+                        <h4>Galaxy S8</h4>
+                        <div class="btn">Wybieram</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="chooseImg">
+                        <img src="img/s8plus-choose.png" alt="" class="img-responsive">
+                        <h4>Galaxy S8+</h4>
+                        <div class="btn">Wybieram</div>
+                    </div>
+                </div>
+            </div>
+            <div class="krok2" style="display:none;">
+                <form id="MO" name="myFormMO" onsubmit="return validateForm('checkboxMO')">
+                <div class="form">
+                    <h2>Formularz zgłoszeniowy</h2>
+                    <span>wypełnij i weź udział w konkursie</span>
+                    <p>Wyślij <b>SMS z numeru kontaktowego</b><br/>
+                        o treści <font style="font-weight:bold;color:#82bce2;">xxx</font> na numer <font
+                                style="font-weight:bold;color:#82bce2;">xxxxx</font> <br/>
+                        W odpowiedzi otrzymasz KOD, który należy wpisać poniżej:</p>
+                    <input type="text" placeholder="Wpisz otrzymany PIN...">
+                    <br>
+                    <input type="checkbox" name="checkboxMO"> akceptuję <a target="_blank"
+                                                                           href="http://wygraj-nagrode.pl/regulamin.pdf"
+                                                                           style="color: white; text-decoration: none;">
+                    regulamin</a><br>
+                    <a href="#">
+                        <div>
+                            <button type="submit" class="send" style="background-color: black;">Biorę udział</button>
+                        </div>
+                    </a><br>
+                    <div class="alert alert-danger" id="checkbox_alert" style="display: none">
+                        Zaakceptuj regulamin
+                    </div>
+                    <p style="font-size: 11px; color: white; margin-top: 0.5em; line-height: 1.2em">
+                        Wysyłając sms bierzesz udział w konkursie i możesz wygrać prezentowany smartfon. <br>
+                        Koszt smsa wynosi <span style="font-size: 11px; color:#82bce2; font-style: normal;">  xxx zł</span>.<br>
+                        Każdy kto wyśle sms ma szansę na wygraną! Życzymy powodzenia. </p>
+                    <p style="font-size: 1.5rem; color: white; font-weight: bold; margin-top: 0.5em">Maksymalna
+                        wartość nagrody: <span style="color: #ff0000; font-style: normal; ">4000 zł </span></p>
+                </div>
+                </form>
+
+            </div>
+            <div class="col-md-12">
+                <h2>
+                    Wybierz smartfon, który chcesz wygrać i weź udział w konkursie
+                </h2>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="section"></section>
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="panel-group">
+				  <div class="panel panel-default">
+				    <div class="panel-heading">
+                    <p style="text-align: left; padding-bottom: 1em;"> © Copyright by Wygraj-Nagrode.pl&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Super nagrody&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jasne zasady&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<span style="text-align: right; margin-left: 400px; "> Reklamacje </span> </p>
+
+				      <h4 class="panel-title">
+				        <p>Regulamin</p>
+				      </h4>
+				    </div>
+				    <div id="collapse1">
+				      <p>Jest to strona typu landing page należąca do serwisu www.wygraj-nagrode.pl. Treści przedstawione na stronie
+
+mają charakter informacyjny i promocyjny, zachęcający do wzięcia udziału w konkursie, w którym jedną z nagród jest smartfon
+
+Samsung Galaxy S8 / Samsung Galaxy S8+. Każdy uczestnik konkursu ma szansę wygraną. Niniejszy landing page jest usługą SMS PREMIUM dostępną w
+
+sieciach Play, Plus, Orange oraz T-Mobile. Koszty wysłania sms wynosi xx,xx zł (xx, xx zł z VAT). Wysyłając
+
+sms na wskazany na niniejszej stronie numer, użytkownik oświadcza, iż zapoznał się i akceptuję regulamin
+
+konkursu. Organizator konkursu, warunki uczestnictwa w konkursie oraz procedura reklamacyjna, zostały
+
+określone w regulaminie. Regulamin znajduję się <a href="http://wygraj-nargode.pl/regulamin.pdf" style="text-decoration:underline;">pod tym adresem</a>. Wszelkie nazwy i znaki towarowe użyte na
+
+niniejszej stronie mają charakter wyłącznie informacyjny i zostały użyte w celu przedstawienia, możliwej do
+
+zdobycia, nagrody.</p>
+				    </div>
+				  </div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- Modal -->
+<!-- Modal -->
+<div class="modal fade bd-example-modal-sm p-a-3" tabindex="-1" role="dialog" id="myModal"
+     aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body text-xs-center">
+                <button type="button" class="btn-lg close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+
+                <div class="alert alert-success">
+                    <p style="margin-bottom: 0px; font-size: 30px"><strong>Dziękujemy za udział w konkursie!</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- javascript -->
+<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    function validateForm(checkbox_name) {
+        $('#myModal').modal({show: false})
+        var alert_id;
+        var form_name;
+        if (checkbox_name === 'checkboxMO') {
+            alert_id = 'checkbox_alert';
+            form_name = 'myFormMO';
+        }
+        if (checkbox_name === 'checkboxMT') {
+            alert_id = 'checkbox_alert2';
+            form_name = 'myFormMT';
+        }
+        console.log(alert_id)
+        console.log(checkbox_name)
+        console.log(form_name)
+
+        var y = document.forms[form_name][checkbox_name].checked;
+        console.log(y);
+        if (!y) {
+            show_alert(alert_id);
+            return false;
+        } else {
+            hide_alert(alert_id);
+            $('#myModal').modal('show');
+            return false;
+        }
+    }
+
+    function show_alert(checkbox_alert_id) {
+        var x = document.getElementById(checkbox_alert_id);
+        console.log(x);
+        if (x.style.display === 'none')
+            x.style.display = 'block';
+    }
+    function hide_alert(checkbox_alert_id) {
+        var x = document.getElementById(checkbox_alert_id);
+        if (x.style.display === 'block')
+            x.style.display = 'none';
+    }
+</script>
+
+</body>
+</html>

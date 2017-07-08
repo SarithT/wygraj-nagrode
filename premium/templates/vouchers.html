@@ -1,0 +1,50 @@
+{% extends 'basePremium.html' %}
+{% load bootstrap3 %}
+{% block content %}
+    <body class="container">
+    <div class="container-fluid">
+        <h1>Twoje punkty: {{ user.profile.points }}</h1>
+        <h1>Twoje vouchery: {{ user.profile.vouchers }}</h1>
+        {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                    {% bootstrap_messages message %}
+                    {#                    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>#}
+                {% endfor %}
+            </ul>
+        {% endif %}
+        <form action="{% url 'exchangePoints' %}" method="post">
+            {% csrf_token %}
+            <input type="number" min="0" name="vouchers" required>
+            <button type="submit" class="btn btn-default">Wymień</button>
+        </form>
+
+
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-success">Potwierdź</button>
+        </form>
+
+        <table class="table table-condensed table-striped">
+            <thead>
+            <tr>
+                <th>Lp.</th>
+                <th>Data</th>
+                <th>Odpowiedź</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for answer in answers %}
+                <tr>
+                    <td>{{ forloop.counter }}</td>
+                    <td>{{ answer.pub_date | date:"d/m/Y H:i" }}</td>
+                    <td style="word-wrap: break-word;min-width: 500px;max-width: 500px;">{{ answer.answer_text }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    </body>
+
+{% endblock %}

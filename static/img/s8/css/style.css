@@ -1,0 +1,247 @@
+body{
+	margin:0;
+	padding:0;
+	font-family: 'montserratregular';
+	font-size: 14px;
+	background-color: #000;
+	min-width: 100%;
+	color: #fff;
+}
+html,body{
+    margin:0;
+    padding:0;
+    border:0;
+}
+.clr{
+	clear:both;
+}
+h1,h2,h3,h4,h5,h6,p{
+	padding: 0;
+	margin: 0;
+}
+a, a:visited, a:focus, a:active, a:hover{
+  outline:0 none !important;
+  color: #fff;
+	text-decoration: none;
+}
+.height-full {
+  height: 100vh;
+}
+#top{
+	background: url(../img/top.jpg) no-repeat center center fixed;
+    text-align: center;
+}
+#top span{
+    font-family: 'montserratlight';
+    font-size: 42px;
+}
+#top h2{
+    font-family: 'montserratbold';
+    font-size: 48px;
+}
+#top h4{
+    font-size: 30px;
+    text-transform: uppercase;
+}
+#top h1{
+    font-size: 60px;
+    text-transform: uppercase;
+    color: #ff3b3b;
+}
+hr{
+    border: 0;
+    background: url(../img/hr.png);
+    width: 500px;
+    height: 9px;
+}
+.topText{
+    margin-top: 200px;
+}
+#compare{
+    background: url(../img/comparebg.jpg) no-repeat center center fixed;
+    padding: 60px 0;
+}
+#compare h4{
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 80px;
+}
+#compare h2{
+    font-size: 36px;
+    font-family: 'montserratbold';
+    margin-bottom: 30px;
+}
+#compare ul{
+    margin: 0;
+    padding: 0;
+}
+#compare ul li{
+    list-style: none;
+    font-size: 18px;
+    height: 72px;
+    padding-top: 20px;
+}
+li.icon1{
+    background: url(../img/icon1.png) no-repeat 0 5px transparent;
+    padding-left: 72px;
+}
+li.icon2{
+    background: url(../img/icon2.png) no-repeat 0 5px transparent;
+    padding-left: 72px;
+}
+li.icon3{
+    background: url(../img/icon3.png) no-repeat 0 5px transparent;
+    padding-left: 72px;
+}
+li.icon4{
+    background: url(../img/icon4.png) no-repeat 0 5px transparent;
+    padding-left: 72px;
+}
+li.icon5{
+    background: url(../img/icon5.png) no-repeat 0 5px transparent;
+    padding-left: 72px;
+}
+li.icon6{
+    background: url(../img/icon6.png) no-repeat 0 5px transparent;
+    padding-left: 72px;
+}
+#choose{
+    background: url(../img/choose.jpg) no-repeat center center fixed;
+    padding: 60px 0;
+    height: 1080px;
+}
+#choose h4{
+    font-family: 'montserratbold';
+    font-size: 36px;
+    text-align: center;
+    margin: 15px 0;
+}
+.chooseImg {
+    position: relative;
+    text-align: center;
+}
+.btn{
+    text-transform: uppercase;
+    font-size: 18px;
+    border-radius: 70px;
+    padding: 12px 40px;
+    text-align: center;
+    border:2px solid #fff;
+}
+.btn:hover{
+    color: #12bcff;
+    border: 2px solid #12bcff;
+}
+#choose h2{
+    font-size: 42px;
+    text-align: center;
+    margin-top: 60px;
+}
+#section{
+    background: url(../img/section.jpg) no-repeat center center fixed;
+    padding: 60px 0;
+    height: 1080px;
+}
+footer{
+    padding: 30px 0;
+    background-color: #000000;
+    text-align: center;
+}
+.panel-default>.panel-heading{
+	background-color: transparent;
+	border:0;
+	color: #fff;
+}
+.panel{
+	background-color: transparent;
+	border: 0;
+}
+#collapse1 p{
+	font-weight: normal;
+	font-size: 13px;
+}
+.panel-group{
+	margin-bottom: 0;
+}
+.form h2{
+	font-size: 24px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.form{
+	margin: 30px 0;
+	text-align: center;
+}
+.form span{
+	font-size: 16px;
+	color: #cccccc;
+	font-style: italic;
+}
+.form p{
+	margin: 15px 0;
+	font-size: 16px;
+	line-height: 24px;
+}
+.form input[type="text"] {
+    border: 1px solid #eaeaea;
+    padding: 15px;
+    margin-bottom: 8px;
+    color: #000;
+}
+.form .send{
+    font-size: 18px;
+    border-radius: 70px;
+    padding: 8px 20px;
+    display: inline-block;
+    text-align: center;
+    border:2px solid #fff;
+	margin-top: 8px;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 992px){
+    #compare{
+        text-align: center;
+    }
+    #compare ul li{
+        display: inline-block;
+        text-align: left;
+    }
+    #compare img{
+        display: none;
+    }
+    #compare h2{
+        margin-top: 40px;
+    }
+    #compare h4{
+        margin-bottom: 40px;
+    }
+    .chooseImg img{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .chooseImg .btn{
+        margin-bottom: 30px;
+    }
+    #choose{
+        height: auto;
+    }
+}
+@media only screen and (max-width: 768px){
+    #top h1{
+        font-size: 36px;
+    }
+    hr{
+        display: none;
+    }
+    #choose h2{
+        font-size: 32px;
+    }
+}

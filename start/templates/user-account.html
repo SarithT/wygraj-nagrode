@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+    <body class="container">
+    <div class="container-fluid">
+        <h1>Liczba punktów: {{ user.profile.points }}</h1>
+        <h1>Liczba voucherów: {{ user.profile.vouchers }}</h1>
+        <h1>Status premium: {{ user.profile.premium }}</h1>
+        <h1>{{ user.id }}</h1>
+        <h1><a href="/change-password">Zmień hasło</a></h1>
+
+        <table class="table table-condensed table-striped">
+            <thead>
+            <tr>
+                <th>Lp.</th>
+                <th>Data</th>
+                <th>Odpowiedź</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for answer in answers %}
+                <tr>
+                    <td>{{ forloop.counter }}</td>
+                    <td>{{ answer.pub_date | date:"d/m/Y H:i" }}</td>
+                    <td style="word-wrap: break-word;min-width: 500px;max-width: 500px;">{{ answer.answer_text }}</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+
+    </div>
+    </body>
+
+{% endblock %}

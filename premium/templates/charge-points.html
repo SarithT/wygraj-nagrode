@@ -1,0 +1,30 @@
+{% extends 'basePremium.html' %}
+{% load bootstrap3 %}
+
+{% block content %}
+    <body class="container">
+    <div class="container-fluid">
+        <h2 class="text-center">Doładuj punkty</h2>
+        {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                {% endfor %}
+            </ul>
+        {% endif %}
+
+        <p>Aby doładować punkty wyślij sms a następnie wprowadź otrzymany kod.</p>
+
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            {% bootstrap_form form %}
+            <button type="submit" class="btn btn-default">Zatwierdź</button>
+        </form>
+
+        <p>Koszt smsa, treść, numer na który powinien zostać wysłany sms oraz ilość punktów przysługująca za wysłanie
+            wiadomości określona została w zakładce „Zdobądź kod na punkty”.</p>
+
+    </div>
+    </body>
+
+{% endblock %}

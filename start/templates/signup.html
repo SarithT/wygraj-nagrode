@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load bootstrap3 %}
+
+{% block content %}
+    <body class="container">
+    <div class="container-fluid">
+        <div class="col-md-8 col-md-offset-2">
+            <h2 style="text-align: center">Zarejestruj się</h2>
+            <form method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                {% bootstrap_form form %}
+                <button type="submit" class="btn btn-default btn-primary"
+                        style="text-align: center; margin: auto; display: block">Zarejestruj się
+                </button>
+                <p style="color: #A7A7A7; padding-top: 0.5em; text-align: center">Rejestrując się akceptujesz regulamin
+                    serwisu wygraj-nagrode.pl</p>
+            </form>
+        </div>
+    </div>
+    </body>
+{% endblock %}
