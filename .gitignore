@@ -102,4 +102,4 @@ ENV/
 /staticfiles/*
 
 /.idea/*
-/wygraj-nagrode/settings.py
+/wygraj_nagrode/settings.py
