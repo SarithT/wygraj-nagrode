@@ -1,8 +1,18 @@
 /*
     DJANGO Admin styles
 */
-
 @import url(fonts.css);
+
+.field-answer_text {
+	min-width: 400px;
+    max-width: 600px ;
+	word-wrap: break-word;
+}
+
+.column-answer_text {
+	min-width: 400px;
+    max-width: 600px ;
+    word-wrap: break-word;
 
 body {
     margin: 0;
@@ -14,6 +24,8 @@ body {
 }
 
 /* LINKS */
+
+
 
 a:link, a:visited {
     color: #447e9b;
@@ -256,6 +268,7 @@ td, th {
 }
 
 th {
+    max-width: 300px;
     font-weight: 600;
     text-align: left;
 }
@@ -366,7 +379,7 @@ table thead th.sorted .sortoptions a.sortremove {
 }
 
 table thead th.sorted .sortoptions a.sortremove:after {
-    content: '\\';
+    content: "\\/" ;
     position: absolute;
     top: -6px;
     left: 3px;
@@ -976,3 +989,4 @@ table#change-history tbody th {
 .popup #header {
     padding: 10px 20px;
 }
+

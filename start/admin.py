@@ -1,6 +1,8 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 from django.contrib.auth.models import User
+from django.forms import TextInput, Textarea
+from django.db import models
 
 from .models import Profile
 from .models import Answer
@@ -13,6 +15,9 @@ admin.site.register(Code, UserCodeAdmin)
 
 class UserAnswerAdmin(admin.ModelAdmin):
     list_display = ('user','pub_date','answer_text','prize')
+    formfield_overrides = {
+        models.TextField: {'widget': Textarea(attrs={'style':'width: 500px'})},
+    }
 
 admin.site.register(Answer, UserAnswerAdmin)
 
