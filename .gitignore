@@ -103,3 +103,4 @@ ENV/
 
 /.idea/*
 /wygraj_nagrode/settings.py
+*.sqlite3
