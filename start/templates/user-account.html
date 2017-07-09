@@ -6,8 +6,11 @@
     <div class="container-fluid">
         <h1>Liczba punktów: {{ user.profile.points }}</h1>
         <h1>Liczba voucherów: {{ user.profile.vouchers }}</h1>
-        <h1>Status premium: {{ user.profile.premium }}</h1>
-        <h1>{{ user.id }}</h1>
+        {% if user.profile.premium %}
+        <h1>Status premium: Aktywny</h1>
+        {% else %}
+        <h1>Status premium: Nieaktywny</h1>
+        {% endif %}
         <h1><a href="/change-password">Zmień hasło</a></h1>
 
         <table class="table table-condensed table-striped">

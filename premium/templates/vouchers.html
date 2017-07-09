@@ -32,6 +32,7 @@
                 <th>Lp.</th>
                 <th>Data</th>
                 <th>Odpowiedź</th>
+                <th>Nagroda</th>
             </tr>
             </thead>
             <tbody>
@@ -39,7 +40,8 @@
                 <tr>
                     <td>{{ forloop.counter }}</td>
                     <td>{{ answer.pub_date | date:"d/m/Y H:i" }}</td>
-                    <td style="word-wrap: break-word;min-width: 500px;max-width: 500px;">{{ answer.answer_text }}</td>
+                    <td style="word-wrap: break-word;min-width: 450px;max-width: 450px;">{{ answer.answer_text }}</td>
+                    <td>{{ answer.prize }}</td>
                 </tr>
             {% endfor %}
             </tbody>

@@ -12,7 +12,7 @@ class UserCodeAdmin(admin.ModelAdmin):
 admin.site.register(Code, UserCodeAdmin)
 
 class UserAnswerAdmin(admin.ModelAdmin):
-    list_display = ('user','pub_date','answer_text')
+    list_display = ('user','pub_date','answer_text','prize')
 
 admin.site.register(Answer, UserAnswerAdmin)
 

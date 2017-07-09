@@ -23,8 +23,9 @@ class SignUpForm(UserCreationForm):
 class AnswerForm(forms.ModelForm):
     class Meta:
         model = Answer
-        fields = ('answer_text',)
+        fields = ('prize','answer_text',)
         labels = {
+            'prize' : 'Wybierz nagrodę',
             'answer_text' : 'Twoja odpowiedź',
         }
         widgets = {

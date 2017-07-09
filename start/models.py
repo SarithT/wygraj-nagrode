@@ -31,9 +31,15 @@ def create_or_update_user_profile(sender, instance, created, **kwargs):
 
 
 class Answer(models.Model):
+    PRIZES_TO_CHOOSE = (
+        ('Samsung Galaxy S8', 'Samsung Galaxy S8'),
+        ('IPhone 7', 'IPhone 7'),
+    )
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     answer_text = models.CharField(max_length=500)
+    prize = models.CharField(max_length=20,choices=PRIZES_TO_CHOOSE, default='SGS8')
     pub_date = models.DateTimeField(auto_now_add=True)
+
 
 class Code(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
