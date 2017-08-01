@@ -22,7 +22,6 @@ class Profile(models.Model):
 
 
 
-
 @receiver(post_save, sender=User)
 def create_or_update_user_profile(sender, instance, created, **kwargs):
     if created:
@@ -32,7 +31,7 @@ def create_or_update_user_profile(sender, instance, created, **kwargs):
 
 class Answer(models.Model):
     PRIZES_TO_CHOOSE = (
-        ('Samsung Galaxy S8', 'Samsung Galaxy S8'),
+        ('SGS8', 'Samsung Galaxy S8'),
         ('IPhone 7', 'IPhone 7'),
     )
     user = models.ForeignKey(User, on_delete=models.CASCADE)

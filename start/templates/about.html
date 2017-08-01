@@ -1,244 +1,332 @@
 {% load static %}
+
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-
+<html lang="pl">
+  <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <title>wygraj-nagrode</title>
+    <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
+    <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
 
-    <title>New Age - Start Bootstrap Theme</title>
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,300|Raleway:300,400,900,700italic,700,300,600">
+    <link rel="stylesheet" type="text/css" href="{% static 'themeStatic/css/jquery.bxslider.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'themeStatic/css/font-awesome.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'themeStatic/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'themeStatic/css/animate.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'themeStatic/css/style.css' %}">
+    <!-- =======================================================
+        Theme Name: Baker
+        Theme URL: https://bootstrapmade.com/baker-free-onepage-bootstrap-theme/
+        Author: BootstrapMade.com
+        Author URL: https://bootstrapmade.com
+    ======================================================= -->
+  </head>
+  <body>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="{% static "lib/bootstrap/css/bootstrap.min.css" %}" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
-
-    <!-- Plugin CSS -->
-    <link rel="stylesheet" href="{% static 'lib/font-awesome/css/font-awesome.min.css"' %}">
-    <link rel="stylesheet" href="{% static 'lib/simple-line-icons/css/simple-line-icons.css' %}">
-    <link rel="stylesheet" href="{% static 'lib/device-mockups/device-mockups.min.css' %}">
-
-    <!-- Theme CSS -->
-    <link href="{% static 'css/new-age.min.css' %}" rel="stylesheet">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-
-<body id="page-top">
-
-<nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-            </button>
-            <a class="navbar-brand page-scroll" href="#page-top">Start Bootstrap</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li>
-                    <a class="page-scroll" href="#download">Download</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#features">Features</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="#contact">Contact</a>
-                </li>
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container-fluid -->
-</nav>
-
-<header>
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-7">
-                <div class="header-content">
-                    <div class="header-content-inner">
-                        <h1>New Age is an app landing page that will help you beautifully showcase your new mobile app,
-                            or anything else!</h1>
-                        <a href="#download" class="btn btn-outline btn-xl page-scroll">Start Now for Free!</a>
-                    </div>
-                </div>
+    <div class="loader"></div>
+    <div id="myDiv">
+    <!--HEADER-->
+    <div class="header">
+      <div class="bg-color">
+        <header id="main-header">
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Wygraj<span class="logo-dec">-nagrode</span></a>
             </div>
-            <div class="col-sm-5">
-                <div class="device-container">
-                    <div class="device-mockup iphone6_plus portrait white">
-                        <div class="device">
-                            <div class="screen">
-                                <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                                <img src="{% static "img/demo-screen-1.jpg" %}" class="img-responsive" alt="">
-                            </div>
-                            <div class="button">
-                                <!-- You can hook the "home button" to some JavaScript events or just remove it -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="#main-header">Home</a></li>
+                <li class=""><a href="#feature">About</a></li>
+                <li class=""><a href="#service">Services</a></li>
+                <li class=""><a href="#portfolio">Portfolio</a></li>
+                <li class=""><a href="#blog">Blog</a></li>
+              </ul>
             </div>
-        </div>
-    </div>
-</header>
-
-<section id="download" class="download bg-primary text-center">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h2 class="section-heading">Discover what all the buzz is about!</h2>
-                <p>Our app is available on any mobile device! Download now to get started!</p>
-                <div class="badges">
-                    <a class="badge-link" href="#"><img src="{% static "img/google-play-badge.svg" %}" alt=""></a>
-                    <a class="badge-link" href="#"><img src="{% static "img/app-store-badge.svg" %}" alt=""></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section id="features" class="features">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <div class="section-heading">
-                    <h2>Unlimited Features, Unlimited Fun</h2>
-                    <p class="text-muted">Check out what you can do with this app theme!</p>
-                    <hr>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="device-container">
-                    <div class="device-mockup iphone6_plus portrait white">
-                        <div class="device">
-                            <div class="screen">
-                                <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                                <img src="{% static "img/demo-screen-1.jpg" %}" class="img-responsive" alt=""></div>
-                            <div class="button">
-                                <!-- You can hook the "home button" to some JavaScript events or just remove it -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-8">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="feature-item">
-                                <i class="icon-screen-smartphone text-primary"></i>
-                                <h3>Device Mockups</h3>
-                                <p class="text-muted">Ready to use HTML/CSS device mockups, no Photoshop required!</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="feature-item">
-                                <i class="icon-camera text-primary"></i>
-                                <h3>Flexible Use</h3>
-                                <p class="text-muted">Put an image, video, animation, or anything else in the
-                                    screen!</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="feature-item">
-                                <i class="icon-present text-primary"></i>
-                                <h3>Free to Use</h3>
-                                <p class="text-muted">As always, this theme is free to download and use for any
-                                    purpose!</p>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="feature-item">
-                                <i class="icon-lock-open text-primary"></i>
-                                <h3>Open Source</h3>
-                                <p class="text-muted">Since this theme is MIT licensed, you can use it commercially!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="cta">
-    <div class="cta-content">
+          </div>
+        </nav>
+        </header>
+        <div class="wrapper">
         <div class="container">
-            <h2>Stop waiting.<br>Start building.</h2>
-            <a href="#contact" class="btn btn-outline btn-xl page-scroll">Let's Get Started!</a>
+          <div class="row">
+            <div class="banner-info text-center wow fadeIn delay-05s">
+              <h1 class="bnr-title">We are at ba<span>ker</span></h1>
+              <h2 class="bnr-sub-title">Starting a new journey!!</h2>
+              <p class="bnr-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip <br>ex ea commodo consequat.</p>
+              <div class="brn-btn">
+                <a href="#" class="btn btn-download">Download now!</a>
+                <a href="#" class="btn btn-more">Learn More</a>
+              </div>
+              <div class="overlay-detail">
+                <a href="#feature"><i class="fa fa-angle-down"></i></a>
+              </div>
+            </div>
+          </div>
         </div>
+        </div>
+      </div>
     </div>
-    <div class="overlay"></div>
-</section>
+    <!--/ HEADER-->
+    <!---->
+    <section id="feature" class="section-padding wow fadeIn delay-05s">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="wrap-item text-center">
+              <div class="item-img">
+                <img src="{% static 'themeStatic/img/ser01.png' %}">
+              </div>
+              <h3 class="pad-bt15">Creative Concept</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="wrap-item text-center">
+              <div class="item-img">
+                <img src="{% static 'themeStatic/img/ser02.png' %}">
+              </div>
+              <h3 class="pad-bt15">Amazing Design</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="wrap-item text-center">
+              <div class="item-img">
+                <img src="{% static 'themeStatic/img/ser03.png' %}">
+              </div>
+              <h3 class="pad-bt15">Cost effective</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="wrap-item text-center">
+              <div class="item-img">
+                <img src="{% static 'themeStatic/img/ser04.png' %}">
+              </div>
+              <h3 class="pad-bt15">Secure</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---->
+    <!---->
+    <section id="service" class="section-padding wow fadeInUp delay-05s">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2 class="service-title pad-bt15">What We Do?</h2>
+            <p class="sub-title pad-bt15">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore magna aliqua.</p>
+            <hr class="bottom-line">
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="service-item">
+              <h3><span>D</span>esign And Developement</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <a href="">learn more...</a>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="service-item">
+              <h3><span>W</span>ebsite Maintenance</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <a href="">learn more...</a>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="service-item">
+              <h3><span>S</span>eo Optimization</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <a href="">learn more...</a>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12">
+            <div class="service-item">
+              <h3><span>D</span>igital Marketing</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <a href="">Learn more...</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---->
+    <!---->
+    <!---->
+    <!---->
+    <section id="portfolio" class="section-padding wow fadeInUp delay-05s">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2 class="service-title pad-bt15">Our Recent Works</h2>
+            <p class="sub-title pad-bt15">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore magna aliqua.</p>
+            <hr class="bottom-line">
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
+            <figure>
+              <img src="{% static 'themeStatic/img/port01.jpg' %}" class="img-responsive">
+              <figcaption>
+                  <h2>Project For Everyone</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
+            <figure>
+              <img src="{% static 'themeStatic/img/port02.jpg' %}" class="img-responsive">
+              <figcaption>
+                  <h2>Project For Everyone</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
+            <figure>
+              <img src="{% static 'themeStatic/img/port03.jpg' %}" class="img-responsive">
+              <figcaption>
+                  <h2>Project For Everyone</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
+            <figure>
+              <img src="{% static 'themeStatic/img/port04.jpg' %}" class="img-responsive">
+              <figcaption>
+                  <h2>Project For Everyone</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
+            <figure>
+              <img src="{% static 'themeStatic/img/port05.jpg' %}" class="img-responsive">
+              <figcaption>
+                  <h2>Project For Everyone</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12 portfolio-item padding-right-zero mr-btn-15">
+            <figure>
+              <img src="{% static 'themeStatic/img/port06.jpg' %}" class="img-responsive">
+              <figcaption>
+                  <h2>Project For Everyone</h2>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost.</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---->
+    <!---->
+    <!---->
+    <section id="blog" class="section-padding wow fadeInUp delay-05s">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2 class="service-title pad-bt15">Latest from our blog</h2>
+            <p class="sub-title pad-bt15">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore magna aliqua.</p>
+            <hr class="bottom-line">
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="blog-sec">
+              <div class="blog-img">
+                <a href="">
+                  <img src="{% static 'themeStatic/img/blog01.jpg' %}" class="img-responsive">
+                </a>
+              </div>
+              <div class="blog-info">
+                <h2>This is Lorem ipsum heading.</h2>
+                <div class="blog-comment">
+                    <p>Posted In: <span>Legal Advice</span></p>
+                    <p>
+                      <span><a href="#"><i class="fa fa-comments"></i></a> 15</span>
+                      <span><a href="#"><i class="fa fa-eye"></i></a> 11</span></p>
+                </div>
+                <p>We cannot expect people to have respect for laws and orders until we teach respect to those we have entrusted to enforce those laws all the time. we always want to help people cordially.</p>
+                <a href="" class="read-more">Read more →</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="blog-sec">
+              <div class="blog-img">
+                <a href="">
+                  <img src="{% static 'themeStatic/img/blog02.jpg' %}" class="img-responsive">
+                </a>
+              </div>
+              <div class="blog-info">
+                <h2>This is Lorem ipsum heading.</h2>
+                <div class="blog-comment">
+                    <p>Posted In: <span>Legal Advice</span></p>
+                    <p>
+                      <span><a href="#"><i class="fa fa-comments"></i></a> 15</span>
+                      <span><a href="#"><i class="fa fa-eye"></i></a> 11</span></p>
+                </div>
+                <p>We cannot expect people to have respect for laws and orders until we teach respect to those we have entrusted to enforce those laws all the time. we always want to help people cordially.</p>
+                <a href="" class="read-more">Read more →</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="blog-sec">
+              <div class="blog-img">
+                <a href="">
+                  <img src="{% static 'themeStatic/img/blog03.jpg' %}" class="img-responsive">
+                </a>
+              </div>
+              <div class="blog-info">
+                <h2>This is Lorem ipsum heading.</h2>
+                <div class="blog-comment">
+                    <p>Posted In: <span>Legal Advice</span></p>
+                    <p>
+                      <span><a href="#"><i class="fa fa-comments"></i></a> 15</span>
+                      <span><a href="#"><i class="fa fa-eye"></i></a> 11</span></p>
+                </div>
+                <p>We cannot expect people to have respect for laws and orders until we teach respect to those we have entrusted to enforce those laws all the time. we always want to help people cordially.</p>
+                <a href="" class="read-more">Read more →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---->
+    <!---->
+    <!---->
+    <footer id="footer">
+      <div class="container">
+        <div class="row text-center">
+          <p>&copy; Baker Theme. All Rights Reserved.</p>
+          <div class="credits">
+            <!--
+                All the links in the footer should remain intact.
+                You can delete the links only if you purchased the pro version.
+                Licensing information: https://bootstrapmade.com/license/
+                Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Baker
+            -->
+            Designed  by <a href="https://bootstrapmade.com/">Bootstrap Themes</a>
+        </div>
+        </div>
+      </div>
+    </footer>
+    <!---->
+  </div>
+    <script src="{% static 'themeStatic/js/jquery.min.js' %}"></script>
+    <script src="{% static 'themeStatic/js/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'themeStatic/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'themeStatic/js/wow.js' %}"></script>
+    <script src="{% static 'themeStatic/js/jquery.bxslider.min.js' %}"></script>
+    <script src="{% static 'themeStatic/js/custom.js' %}"></script>
 
-<section id="contact" class="contact bg-primary">
-    <div class="container">
-        <h2>We <i class="fa fa-heart"></i> new friends!</h2>
-        <ul class="list-inline list-social">
-            <li class="social-twitter">
-                <a href="#"><i class="fa fa-twitter"></i></a>
-            </li>
-            <li class="social-facebook">
-                <a href="#"><i class="fa fa-facebook"></i></a>
-            </li>
-            <li class="social-google-plus">
-                <a href="#"><i class="fa fa-google-plus"></i></a>
-            </li>
-        </ul>
-    </div>
-</section>
-
-<footer>
-    <div class="container">
-        <p>&copy; 2016 Start Bootstrap. All Rights Reserved.</p>
-        <ul class="list-inline">
-            <li>
-                <a href="#">Privacy</a>
-            </li>
-            <li>
-                <a href="#">Terms</a>
-            </li>
-            <li>
-                <a href="#">FAQ</a>
-            </li>
-        </ul>
-    </div>
-</footer>
-
-<!-- jQuery -->
-<script src="{% static "lib/jquery/jquery.min.js" %}"></script>
-
-<!-- Bootstrap Core JavaScript -->
-<script src="{% static "lib/bootstrap/js/bootstrap.min.js" %}"></script>
-
-<!-- Plugin JavaScript -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
-<!-- Theme JavaScript -->
-<script src="{% static "js/new-age.min.js" %}"></script>
-
-</body>
-
+  </body>
 </html>

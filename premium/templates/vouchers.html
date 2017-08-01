@@ -9,7 +9,6 @@
             <ul class="messages">
                 {% for message in messages %}
                     {% bootstrap_messages message %}
-                    {#                    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>#}
                 {% endfor %}
             </ul>
         {% endif %}
